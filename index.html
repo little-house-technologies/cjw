@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <style>
+      html {
+        font-family: optima;
+        color: #324683;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+      }
+
+      header, footer {
+        /* background-color: #99ce6b; */
+        background: linear-gradient(90deg, #82b45f, #cbd476);
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        border-bottom: 1px solid #324683;
+        /* display: flex;
+        flex-direction: column; */
+      }
+
+      a {
+        color: #324683;
+        text-decoration: none;
+      }
+
+      h1 {
+        margin: 0;
+        margin-left: 10px;
+      }
+
+      button {
+        background-color: #324683;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        width: 175px;
+        height: 60px;
+        font-size: 18px;
+      }
+
+      #logo-div {
+        margin: auto;
+      }
+
+      #logo {
+        height: 67px;
+        width: 67px;
+      }
+
+      .logo-container {
+        display: flex;
+      }
+
+      .vert-text {
+        /* display: inline-flex;
+        flex-direction: column; */
+      }
+
+      .links {
+        box-sizing: border-box;
+        display: flex;
+        align-items: end;
+      }
+
+      .links > a {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+
+      .content {
+        margin: auto;
+      }
+
+      .padding {
+        padding: 10px;
+      }
+
+      .content > div:nth-child(even) {
+        background-color: rgba(30, 50, 131, .1);
+      }
+
+      #sky {
+        width: 100%;
+      }
+
+      .card {
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+        border: 3px solid #82b45f;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        font-size: 22px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-container">
+        <div>
+          <img src="resources/logo.jpeg" alt="Logo" id="logo">
+        </div>
+        <div class="vert-text">
+          <h1>CJW<br>Financial Coaching</h1>
+        </div>
+      </div>
+      <div class="links">
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">FAQ</a>
+          <a href="">Contact</a>
+          <a href="">About</a>
+      </div>
+      
+    </header>
+    <div class='content'>
+      <div style='position: relative; z-index: -1;'>
+        <img src="resources/light_bulb_narrow.png" alt="sky" id='sky'>
+        <div style='color: white; top: 20px; left: 30px; position: absolute; font-size: 54px;'>Lighting your path <br>to a bright financial future</div>
+      </div>
+      <div class='padding'>
+
+        <h2>Do you feel in the dark about where your hard-earned money is going?</h2>
+        <h2>Are you ready to take the step to control your money (rather than let it control you)?</h2>
+        <h2>Have you made mistakes with money? Have you wasted time getting your act together?</h2>
+        <h2>Do you want to reduce your debt? … save money? … plan for your future?</h2>
+        <h2>Have you ever thought, it’s time to grow up and handle money better?</h2>
+        <h2>Have you ever thought, it’s time to start adulting with your money?</h2>
+      </div>
+      <div class="padding" style='text-align: center;'>
+        <h2>I can shine a light and show you the way to...</h2>
+        <p>Maybe have some images to go with the cards below</p>
+        <div style='display: flex; justify-content: space-around;'>
+          <div class='card'>Make your money work!</div>
+          <div class='card'>Have confidence and a plan!</div>
+          <div class='card'>Enjoy a sense of power about your finances!</div>
+        </div>
+      </div>
+      <div class='padding' style='display: flex; flex-direction: column; align-items: center;'>
+        <h2>Curious? Schedule a 15-minute Q&A Call</h2>
+        <button>Schedule Call</button>
+      </div>
+
+    </div>
+    <footer>
+      <div style='display: flex; flex-direction: column;'>
+        <span>Cindy Whittemore</span>
+        <span>Email: cindy@cjwfinco.com</span>
+        <span style='margin-bottom: 20px;'>Call or text: 719-600-9938</span>
+        <span>CJW Financial Coaching LLC</span>
+        <span>PO Box 433</span>
+        <span>Peyton, CO 80831</span>
+      </div>
+    </footer>
+  </body>
+</html>
