@@ -1,0 +1,110 @@
+:root {
+  /* Colors */
+  --dark-green: #82b45f;
+  --yellow-green: #cbd476;
+  --blue: #324683;
+  --white: white;
+}
+
+html {
+  font-family: optima;
+  color: var(--blue);
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+header, footer {
+  /* background-color: #99ce6b; */
+  background: linear-gradient(90deg, var(--dark-green), var(--yellow-green));
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--blue);;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+a {
+  color: var(--blue);;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  margin-left: 10px;
+}
+
+button {
+  background-color: var(--blue);;
+  color: var(--white);;
+  border-radius: 5px;
+  border: none;
+  width: 175px;
+  height: 60px;
+  font-size: 18px;
+}
+
+#logo-div {
+  margin: auto;
+}
+
+#logo {
+  height: 67px;
+  width: 67px;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.vert-text {
+  /* display: inline-flex;
+  flex-direction: column; */
+}
+
+.links {
+  box-sizing: border-box;
+  display: flex;
+  align-items: end;
+}
+
+.links > a {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.content {
+  margin: auto;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.content > div:nth-child(even) {
+  background-color: rgba(30, 50, 131, .1);
+}
+
+#sky {
+  width: 100%;
+}
+
+.card {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  border: 3px solid var(--dark-green);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 22px;
+}
