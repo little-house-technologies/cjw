@@ -28,13 +28,13 @@ header, footer {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  border-bottom: 1px solid var(--blue);;
+  border-bottom: 1px solid var(--blue);
   /* display: flex;
   flex-direction: column; */
 }
 
 a {
-  color: var(--blue);;
+  color: var(--blue);
   text-decoration: none;
 }
 
@@ -44,8 +44,8 @@ h1 {
 }
 
 button {
-  background-color: var(--blue);;
-  color: var(--white);;
+  background-color: var(--blue);
+  color: var(--white);
   border-radius: 5px;
   border: none;
   width: 175px;
@@ -91,7 +91,7 @@ button {
 }
 
 .content > div:nth-child(even) {
-  background-color: rgba(30, 50, 131, .1);
+  background-color: rgba(30, 50, 131, .05);
 }
 
 #sky {
