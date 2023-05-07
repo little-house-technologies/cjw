@@ -162,7 +162,7 @@ button {
 
 #navbar-mobile {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: var(--dark-green);
   top: 56px;
