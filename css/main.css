@@ -4,6 +4,13 @@
   --yellow-green: #cbd476;
   --blue: #324683;
   --white: white;
+
+
+  --square-shape-size: 67px;
+
+  @media (max-width: 800px) {
+    --square-shape-size: 30px;
+  }
 }
 
 html {
@@ -18,6 +25,22 @@ body {
 header {
   position: sticky;
   top: 0;
+}
+
+#header-mobile {
+  @media (max-width: 800px) {
+    display: flex;
+  }
+
+  display: none;
+}
+
+#header-computer {
+  @media (min-width: 801px) {
+    display: flex;
+  }
+
+  display: none;
 }
 
 header, footer {
@@ -58,8 +81,8 @@ button {
 }
 
 #logo {
-  height: 67px;
-  width: 67px;
+  width: var(--square-shape-size);
+  height: var(--square-shape-size);
 }
 
 .logo-container {
@@ -94,8 +117,21 @@ button {
   background-color: rgba(30, 50, 131, .05);
 }
 
-#sky {
+#lightbulb {
   width: 100%;
+}
+
+#lightbulb-container {
+  position: relative;
+  z-index: -1;
+}
+
+#lightbulb-text {
+  color: white;
+  top: 20px;
+  left: 30px;
+  position: absolute;
+  font-size: 54px;
 }
 
 .card {
@@ -107,4 +143,29 @@ button {
   align-items: center;
   padding: 10px;
   font-size: 22px;
+}
+
+#hamburger-menu {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hamburger-menu > div {
+  width: 100%;
+  height: 3px;
+  background-color: #324683;
+  border-radius: 5px;
+}
+
+#navbar-mobile {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-green);
+  top: 56px;
+  padding: 10px;
+  left: 0;
 }
