@@ -32,15 +32,11 @@ header {
     display: none;
   } */
 
-  display: flex;
+  display: none;
 }
 
 #header-computer {
-  @media (min-width: 801px) {
-    display: flex;
-  }
-
-  display: none;
+  display: flex;
 }
 
 header, footer {
@@ -84,11 +80,6 @@ button {
 
   width: 67px;
   height: 67px;
-
-  @media (max-width: 800px) {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 .logo-container {
@@ -174,4 +165,19 @@ button {
   top: 56px;
   padding: 10px;
   left: 0;
+}
+
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  #header-mobile {
+    display: flex;
+  }
+
+  #header-computer {
+    display: none;
+  }
 }
