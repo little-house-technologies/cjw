@@ -28,11 +28,11 @@ header {
 }
 
 #header-mobile {
-  @media (max-width: 800px) {
-    display: flex;
+  @media (min-width: 800px) {
+    display: none;
   }
 
-  display: none;
+  display: flex;
 }
 
 #header-computer {
