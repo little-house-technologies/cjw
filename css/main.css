@@ -28,9 +28,9 @@ header {
 }
 
 #header-mobile {
-  @media (min-width: 800px) {
+  /* @media (min-width: 800px) {
     display: none;
-  }
+  } */
 
   display: flex;
 }
@@ -81,8 +81,14 @@ button {
 }
 
 #logo {
-  width: var(--square-shape-size);
-  height: var(--square-shape-size);
+
+  width: 67px;
+  height: 67px;
+
+  @media (max-width: 800px) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .logo-container {
