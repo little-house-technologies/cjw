@@ -16,6 +16,7 @@
 html {
   font-family: optima;
   color: var(--blue);
+  font-size: 10px;
 }
 
 body {
@@ -27,16 +28,21 @@ header {
   top: 0;
 }
 
+image {
+  /* This eliminates the small gap under the images */
+  display: block;
+}
+
 #header-mobile {
   /* @media (min-width: 800px) {
     display: none;
   } */
 
-  display: none;
+  display: flex;
 }
 
 #header-computer {
-  display: flex;
+  display: none;
 }
 
 header, footer {
@@ -76,10 +82,9 @@ button {
   margin: auto;
 }
 
-#logo {
-
-  width: 67px;
-  height: 67px;
+#logo, #header-spacer {
+  width: 4rem;
+  height: 4rem;
 }
 
 .logo-container {
@@ -129,6 +134,7 @@ button {
   left: 30px;
   position: absolute;
   font-size: 54px;
+  display: none;
 }
 
 .card {
@@ -143,8 +149,9 @@ button {
 }
 
 #hamburger-menu {
-  width: 40px;
-  height: 30px;
+  width: 4rem;
+  height: 3rem;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,7 +174,60 @@ button {
   left: 0;
 }
 
-@media screen and (max-width: 800px) {
+/* 
+Media queries derived from this website
+https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-should-you-use/#tdlr-use-the-below-css
+*/
+/* X-Small devices (portrait phones, less than 576px) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  #header-mobile {
+    display: none;
+  }
+
+  #header-computer {
+    display: flex;
+  }
+
+  #lightbulb-text {
+    display: block;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+ html {
+  font-size: 15px;
+ } 
+}
+
+/* @media screen and (max-width: 800px) {
   #logo {
     width: 30px;
     height: 30px;
@@ -180,4 +240,4 @@ button {
   #header-computer {
     display: none;
   }
-}
+} */
