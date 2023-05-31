@@ -4,13 +4,6 @@
   --yellow-green: #cbd476;
   --blue: #324683;
   --white: white;
-
-
-  --square-shape-size: 67px;
-
-  @media (max-width: 800px) {
-    --square-shape-size: 30px;
-  }
 }
 
 html {
@@ -33,11 +26,20 @@ image {
   display: block;
 }
 
-#header-mobile {
-  /* @media (min-width: 800px) {
-    display: none;
-  } */
+p, a {
+  font-size: 1.6rem;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > span {
+  font-size: 1.6rem;
+}
+
+#header-mobile {
   display: flex;
 }
 
@@ -126,6 +128,7 @@ button {
 #lightbulb-container {
   position: relative;
   z-index: -1;
+  display: none;
 }
 
 #lightbulb-text {
@@ -134,7 +137,6 @@ button {
   left: 30px;
   position: absolute;
   font-size: 54px;
-  display: none;
 }
 
 .card {
@@ -168,10 +170,15 @@ button {
   position: absolute;
   display: none;
   flex-direction: column;
-  background-color: var(--dark-green);
-  top: 56px;
-  padding: 10px;
+  background: linear-gradient(90deg, var(--dark-green), var(--yellow-green));
+  top: 70px;
   left: 0;
+  width: 100%;
+}
+
+#navbar-mobile > a {
+  padding: 15px;
+  border-bottom: 1px solid var(--blue);
 }
 
 /* 
@@ -184,6 +191,10 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
 @media (min-width: 576px) {
   html {
     font-size: 11px;
+  }
+
+  #navbar-mobile {
+    top: 75px;
   }
 }
 
@@ -201,7 +212,7 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
     display: flex;
   }
 
-  #lightbulb-text {
+  #lightbulb-container {
     display: block;
   }
 }
