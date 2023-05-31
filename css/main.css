@@ -9,7 +9,7 @@
 html {
   font-family: optima;
   color: var(--blue);
-  font-size: 10px;
+  font-size: 11px;
 }
 
 body {
@@ -21,7 +21,7 @@ header {
   top: 0;
 }
 
-image {
+img {
   /* This eliminates the small gap under the images */
   display: block;
 }
@@ -106,7 +106,6 @@ button {
 
 .links > a {
   margin-left: 10px;
-  font-size: 20px;
 }
 
 .content {
@@ -171,7 +170,7 @@ button {
   display: none;
   flex-direction: column;
   background: linear-gradient(90deg, var(--dark-green), var(--yellow-green));
-  top: 70px;
+  top: 75px;
   left: 0;
   width: 100%;
 }
@@ -190,18 +189,29 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   #navbar-mobile {
-    top: 75px;
+    top: 79px;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  #navbar-mobile {
+    top: 84px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html {
+    font-size: 14px;
   }
 
   #header-mobile {
@@ -217,24 +227,17 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  html {
-    font-size: 13px;
-  }
-}
-
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
  html {
-  font-size: 15px;
+  font-size: 16px;
  } 
 }
 
