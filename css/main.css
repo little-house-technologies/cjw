@@ -227,6 +227,21 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   #navbar-mobile {
     top: 79px;
   }
+
+  #x-mark {
+    width: 48px;
+    height: 48px;
+  }
+
+  #x-mark:before {
+    left: 6px;
+    top: 22px;
+  }
+  
+  #x-mark:after {
+    right: 6px;
+    top: 22px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -237,6 +252,21 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
 
   #navbar-mobile {
     top: 84px;
+  }
+  
+  #x-mark {
+    width: 52px;
+    height: 52px;
+  }
+
+  #x-mark:before {
+    left: 6px;
+    top: 24px;
+  }
+  
+  #x-mark:after {
+    right: 8px;
+    top: 24px;
   }
 }
 
