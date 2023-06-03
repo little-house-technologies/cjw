@@ -8,19 +8,23 @@ const setCssPropertyById = (tag, property, value) => {
 
 const listenForHamburgerMenuClick = () => {
   document.getElementById('hamburger-menu').addEventListener('click', () => {
-    const display = getCssPropertyById('navbar-mobile', 'display');
+   setCssPropertyById('navbar-mobile', 'display', 'flex');
+   setCssPropertyById('hamburger-menu', 'display', 'none');
+   setCssPropertyById('x-mark', 'display', 'block');
+  });
+}
 
-    if (display === 'none') {
-      setCssPropertyById('navbar-mobile', 'display', 'flex');
-    } else if (display === 'flex') {
-      setCssPropertyById('navbar-mobile', 'display', 'none');
-    }
-
+const listenForXMarkClick = () => {
+  document.getElementById('x-mark').addEventListener('click', () => {
+   setCssPropertyById('navbar-mobile', 'display', 'none');
+   setCssPropertyById('hamburger-menu', 'display', 'flex');
+   setCssPropertyById('x-mark', 'display', 'none');
   });
 }
 
 const setupEventListeners = () => {
   listenForHamburgerMenuClick(); 
+  listenForXMarkClick();
 }
 
 window.onload = () => {
