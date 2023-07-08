@@ -21,11 +21,11 @@
         </div>
       </div>
       <div class="links">
-        <a href="home.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+        <a href="home.html" id="home-link">Home</a>
+        <a href="services.html" id="services-link">Services</a>
+        <a href="faq.html" id="faq-link">FAQ</a>
+        <a href="contact.html" id="contact-link">Contact</a>
+        <a href="about.html" id="about-link">About</a>
       </div>
     </header>
     
@@ -58,7 +58,12 @@
     </header>
     
     <div class="content">
-      Contact
+      <h2>Let's get in touch! Fill out the form below to send me an email.</h2>
+      <form >
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Send">
+      </form>
     <div>
     <footer style="display: flex; flex-direction: column">
         <span>Cindy Whittemore</span>

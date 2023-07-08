@@ -27,6 +27,17 @@ const setupEventListeners = () => {
   listenForXMarkClick();
 }
 
+const highlightCurrentRoute = () => {
+  const urlElements = window.location.href.split('/');
+  const pageWithFileEnding = urlElements[urlElements.length - 1];
+  const page = pageWithFileEnding.split('.')[0];
+  const pageId = `${page}-link`;
+
+  setCssPropertyById(pageId, 'text-decoration', 'underline');
+  console.log(page);
+}
+
 window.onload = () => {
   setupEventListeners();
+  highlightCurrentRoute();
 }
