@@ -34,7 +34,6 @@ const highlightCurrentRoute = () => {
   const pageId = `${page}-link`;
 
   setCssPropertyById(pageId, 'text-decoration', 'underline');
-  console.log(page);
 }
 
 window.onload = () => {
