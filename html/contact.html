@@ -58,135 +58,158 @@
     </header>
     
     <div class="content">
-      <h2>Let's get in touch! Fill out the form below to send me an email.</h2>
+      <div class="padding">
+        <h2 class="center-content padding">Q&A Call</h2>
+        <p class="center-content padding">Q&A calls are phone calls. Schedule a free Q&A call!</p>
 
-      <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
-          <script type="text/javascript">
-              var JFL_231985709023157 = new JotformFeedback({
-                formId: '231985709023157',
-                base: 'https://form.jotform.com/',
-                windowTitle: 'Information Request Form',
-                backgroundColor: '#FFA500',
-                fontColor: '#FFFFFF',
-                type: '0',
-                height: 500,
-                width: 700,
-                openOnLoad: false
-              });
-          </script>
-          <script type="text/javascript">
-          var ifr = document.getElementById("lightbox-231985709023157");
-          if (ifr) {
-            var src = ifr.src;
-            var iframeParams = [];
-            if (window.location.href && window.location.href.indexOf("?") > -1) {
-              iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-            }
-            if (src && src.indexOf("?") > -1) {
-              iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-              src = src.substr(0, src.indexOf("?"))
-            }
-            iframeParams.push("isIframeEmbed=1");
-            ifr.src = src + "?" + iframeParams.join('&');
-          }
-          window.handleIFrameMessage = function(e) {
-            if (typeof e.data === 'object') { return; }
-            var args = e.data.split(":");
-            if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
-            if (!iframe) { return; }
-            switch (args[0]) {
-              case "scrollIntoView":
-                iframe.scrollIntoView();
-                break;
-              case "setHeight":
-                iframe.style.height = args[1] + "px";
-                if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-                  iframe.style.minHeight = args[1] + "px";
-                }
-                break;
-              case "collapseErrorPage":
-                if (iframe.clientHeight > window.innerHeight) {
-                  iframe.style.height = window.innerHeight + "px";
-                }
-                break;
-              case "reloadPage":
-                window.location.reload();
-                break;
-              case "loadScript":
-                if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-                var src = args[1];
-                if (args.length > 3) {
-                    src = args[1] + ':' + args[2];
-                }
-                var script = document.createElement('script');
-                script.src = src;
-                script.type = 'text/javascript';
-                document.body.appendChild(script);
-                break;
-              case "exitFullscreen":
-                if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-                else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-                else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-                else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-                else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-                break;
-            }
-            var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-            if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-              var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-              iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-            }
-          };
-          window.isPermitted = function(originUrl, whitelisted_domains) {
-            var url = document.createElement('a');
-            url.href = originUrl;
-            var hostname = url.hostname;
-            var result = false;
-            if( typeof hostname !== 'undefined' ) {
-              whitelisted_domains.forEach(function(element) {
-                  if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                      result = true;
-                  }
-              });
-              return result;
-            }
-          };
-          if (window.addEventListener) {
-            window.addEventListener("message", handleIFrameMessage, false);
-          } else if (window.attachEvent) {
-            window.attachEvent("onmessage", handleIFrameMessage);
-          }
-          </script>
-            <a class="btn lightbox-231985709023157" 
-            style="
-            margin-top: 16px;
-            text-transform: uppercase;
-            font-size: 14px;
-            text-decoration: none;
-            cursor: pointer;
-            display: inline-block;
-            padding: 10px;
-            font-family: inherit;
-            text-shadow: none;
-            user-select: none;
-            transition: all,.1s,ease-in;
-            background-color: #FFA500;
-            border: 1px solid #FFA500;
-            color: #FFFFFF;
-            ">
-              Schedule Free Q&A Call
-            </a>
 
-      <a href="https://app.acuityscheduling.com/schedule.php?owner=26800409&appointmentType=35553404" target="_blank" class="acuity-embed-button" style="background: #ea546f; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Discovery session</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/26800409.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/26800409.js" async></script>
-      
+        <div class="center-content padding">
+          <a href="https://app.acuityscheduling.com/schedule.php?owner=26800409&appointmentType=35553404" target="_blank" class="acuity-embed-button" style="background: #ea546f; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Free Q&A Call</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/26800409.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/26800409.js" async></script>
+          
 
+        </div>
+
+      </div>
+
+      <div class="padding">
+        <h2 class="center-content padding">Discovery Session</h2>
+        <p class="center-content padding">Discovery sessions are generally held over Zoom. Schedule a Discovery Session!</p>
+
+        <div class="center-content padding">
+          <a href="https://app.acuityscheduling.com/schedule.php?owner=26800409&appointmentType=35551644" target="_blank" class="acuity-embed-button" style="background: #ea546f; color: #fff; padding: 8px 12px; border: 0px; -webkit-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;-moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;border-radius: 4px; text-decoration: none; display: inline-block;">Schedule Discovery Session</a><link rel="stylesheet" href="https://embed.acuityscheduling.com/embed/button/26800409.css" id="acuity-button-styles" /><script src="https://embed.acuityscheduling.com/embed/button/26800409.js" async></script>
+        </div>
+      </div>
+
+      <div class="padding">
+        <h2 class="center-content padding">Email Me</h2>
+        <p class="center-content padding">Or, just shoot me an email!</p>
+
+        <div class="center-content padding">
+          <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script>
+              <script type="text/javascript">
+                  var JFL_231985709023157 = new JotformFeedback({
+                    formId: '231985709023157',
+                    base: 'https://form.jotform.com/',
+                    windowTitle: 'Information Request Form',
+                    backgroundColor: '#FFA500',
+                    fontColor: '#FFFFFF',
+                    type: '0',
+                    height: 500,
+                    width: 700,
+                    openOnLoad: false
+                  });
+              </script>
+              <script type="text/javascript">
+              var ifr = document.getElementById("lightbox-231985709023157");
+              if (ifr) {
+                var src = ifr.src;
+                var iframeParams = [];
+                if (window.location.href && window.location.href.indexOf("?") > -1) {
+                  iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+                }
+                if (src && src.indexOf("?") > -1) {
+                  iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+                  src = src.substr(0, src.indexOf("?"))
+                }
+                iframeParams.push("isIframeEmbed=1");
+                ifr.src = src + "?" + iframeParams.join('&');
+              }
+              window.handleIFrameMessage = function(e) {
+                if (typeof e.data === 'object') { return; }
+                var args = e.data.split(":");
+                if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
+                if (!iframe) { return; }
+                switch (args[0]) {
+                  case "scrollIntoView":
+                    iframe.scrollIntoView();
+                    break;
+                  case "setHeight":
+                    iframe.style.height = args[1] + "px";
+                    if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+                      iframe.style.minHeight = args[1] + "px";
+                    }
+                    break;
+                  case "collapseErrorPage":
+                    if (iframe.clientHeight > window.innerHeight) {
+                      iframe.style.height = window.innerHeight + "px";
+                    }
+                    break;
+                  case "reloadPage":
+                    window.location.reload();
+                    break;
+                  case "loadScript":
+                    if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+                    var src = args[1];
+                    if (args.length > 3) {
+                        src = args[1] + ':' + args[2];
+                    }
+                    var script = document.createElement('script');
+                    script.src = src;
+                    script.type = 'text/javascript';
+                    document.body.appendChild(script);
+                    break;
+                  case "exitFullscreen":
+                    if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+                    else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+                    else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+                    else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+                    else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+                    break;
+                }
+                var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+                if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+                  var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+                  iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+                }
+              };
+              window.isPermitted = function(originUrl, whitelisted_domains) {
+                var url = document.createElement('a');
+                url.href = originUrl;
+                var hostname = url.hostname;
+                var result = false;
+                if( typeof hostname !== 'undefined' ) {
+                  whitelisted_domains.forEach(function(element) {
+                      if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                          result = true;
+                      }
+                  });
+                  return result;
+                }
+              };
+              if (window.addEventListener) {
+                window.addEventListener("message", handleIFrameMessage, false);
+              } else if (window.attachEvent) {
+                window.attachEvent("onmessage", handleIFrameMessage);
+              }
+              </script>
+                <a class="btn lightbox-231985709023157" 
+                style="
+                  margin-top: 16px;
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  text-decoration: none;
+                  cursor: pointer;
+                  display: inline-block;
+                  padding: 10px;
+                  font-family: inherit;
+                  text-shadow: none;
+                  user-select: none;
+                  transition: all,.1s,ease-in;
+                  background-color: #FFA500;
+                  border: 1px solid #FFA500;
+                  color: #FFFFFF;
+                ">
+                  Email me!
+                </a>
+        </div>
+      </div>
 
     <div>
     <footer style="display: flex; flex-direction: column">
-        <span>Cindy Whittemore</span>
         <span>CJW Financial Coaching LLC</span>
-        <span>PO Box 433</span>
-        <span>Peyton, CO 80831</span>
+        <span>cindy@cjwfinco.com</span>
+        <span>Call or text 719-600-9938</span>
+        <span>Based in Colorado, Mountain Time Zone</span>
     </footer>
   </body>
 </html>
