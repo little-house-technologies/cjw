@@ -93,6 +93,10 @@ button {
   display: flex;
 }
 
+.logo-container-mobile {
+  margin-left: 44px;
+}
+
 .vert-text {
   /* display: inline-flex;
   flex-direction: column; */
