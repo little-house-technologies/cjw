@@ -338,7 +338,6 @@ h1 {
 
 
 
-
 /* 
 Media queries derived from this website
 https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-should-you-use/#tdlr-use-the-below-css
@@ -439,9 +438,7 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   }
 
   .complementary-image-text {
-    background-color: rgba(30, 50, 131, .05);
     padding: 20px;
-    text-decoration: underline;
   }
 
   .break-for-small-devices {
