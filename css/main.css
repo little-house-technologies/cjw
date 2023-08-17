@@ -39,6 +39,12 @@ footer > span {
   font-size: 1.6rem;
 }
 
+li {
+  margin-bottom: 5px;
+}
+
+
+
 #header-mobile {
   display: flex;
 }
@@ -298,8 +304,17 @@ h1 {
   display: inline-block;
 }
 
+.text-block {
+  margin: auto;
+  width: 70%;
+}
+
 .font-small {
   font-size: 1rem;
+}
+
+.font-secondary {
+  font-size: 1.3rem;
 }
 
 .complementary-image-text {
@@ -381,25 +396,6 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
     right: 8px;
     top: 24px;
   }
-
-  /* .card-container > div {
-    flex-direction: row;
-  }
-
-  .card-container > div:nth-child(2) {
-    flex-direction: row;
-  }
-
-  .card {
-    width: 40vw;
-    height: 27vw;
-  }
-
-  .complementary-image-text {
-    background-color: rgba(30, 50, 131, .05);
-    padding: 20px;
-    text-decoration: underline;
-  } */
 }
 
 /* TRANSITION FROM MOBILE TO DESKTOP */
