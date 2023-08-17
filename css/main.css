@@ -304,17 +304,12 @@ h1 {
   display: inline-block;
 }
 
-.text-block {
-  margin: auto;
-  width: 70%;
-}
-
 .font-small {
   font-size: 1rem;
 }
 
 .font-secondary {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 .complementary-image-text {
@@ -324,6 +319,10 @@ h1 {
 
 .no-break-for-small-devices {
   display: none;
+}
+
+.break-for-small-devices {
+  display: inline-block;
 }
 
 
@@ -422,6 +421,10 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
     display: block;
   }
 
+  .font-secondary {
+    font-size: 1.3rem;
+  }
+
   .card-container > div {
     flex-direction: row;
   }
@@ -439,6 +442,15 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
     background-color: rgba(30, 50, 131, .05);
     padding: 20px;
     text-decoration: underline;
+  }
+
+  .break-for-small-devices {
+    display: none;
+  }
+
+  .text-block {
+    margin: auto;
+    width: 70%;
   }
 }
 
