@@ -149,20 +149,57 @@ h1 {
   font-size: 54px;
 }
 
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; 
+  /* width: 80%;
+  margin: auto; */
+}
+
+.card-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card-container > div:nth-child(2) {
+  flex-direction: column-reverse;
+}
+
+.card-container > div > div {
+  /* flex: 1; */
+  margin-bottom: 20px;
+  margin: auto;
+}
+
 .card {
-  height: 150px;
-  width: 150px;
-  border-radius: 5px;
-  border: 3px solid var(--dark-green);
+  width: 60vw;
+  height: 38vw;
+  /* border-radius: 5px; */
+  /* border: 3px solid var(--dark-green); */
   display: flex;
   align-items: center;
   padding: 10px;
   font-size: 22px;
 }
 
+.card-background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .center-content {
   margin: auto;
   text-align: center;
+}
+
+.flex-center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 #hamburger-menu {
@@ -265,9 +302,14 @@ h1 {
   font-size: 1rem;
 }
 
+.complementary-image-text {
+  /* background-color: rgba(30, 50, 131, .05);
+  padding: 20px; */
+}
 
-
-
+.no-break-for-small-devices {
+  display: none;
+}
 
 
 
@@ -339,6 +381,25 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
     right: 8px;
     top: 24px;
   }
+
+  /* .card-container > div {
+    flex-direction: row;
+  }
+
+  .card-container > div:nth-child(2) {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 40vw;
+    height: 27vw;
+  }
+
+  .complementary-image-text {
+    background-color: rgba(30, 50, 131, .05);
+    padding: 20px;
+    text-decoration: underline;
+  } */
 }
 
 /* TRANSITION FROM MOBILE TO DESKTOP */
@@ -363,6 +424,25 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
 
   #lightbulb-container {
     display: block;
+  }
+
+  .card-container > div {
+    flex-direction: row;
+  }
+
+  .card-container > div:nth-child(2) {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 40vw;
+    height: 27vw;
+  }
+
+  .complementary-image-text {
+    background-color: rgba(30, 50, 131, .05);
+    padding: 20px;
+    text-decoration: underline;
   }
 }
 
