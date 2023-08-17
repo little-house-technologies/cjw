@@ -70,7 +70,7 @@ h1 {
   margin-left: 10px;
 }
 
-button {
+/* button {
   background-color: var(--blue);
   color: var(--white);
   border-radius: 5px;
@@ -78,7 +78,7 @@ button {
   width: 175px;
   height: 60px;
   font-size: 18px;
-}
+} */
 
 #logo-div {
   margin: auto;
@@ -248,7 +248,7 @@ button {
 }
 
 
-.q-and-a-button {
+.button {
   background: #ea546f;
   color: #fff;
   padding: 8px 12px;
