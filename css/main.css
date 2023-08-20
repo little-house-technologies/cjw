@@ -95,12 +95,16 @@ h1 {
   height: 4rem;
 }
 
+#navbar-q-and-a-call {
+  display: none;
+}
+
 .logo-container {
   display: flex;
 }
 
 .logo-container-mobile {
-  margin-left: 44px;
+  margin-left: -44px;
 }
 
 .vert-text {
@@ -367,6 +371,14 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   #x-mark:after {
     right: 6px;
     top: 22px;
+  }
+
+  #navbar-q-and-a-call {
+    display: inline-block;
+  }
+
+  .logo-container-mobile {
+    margin-left: 80px;
   }
 }
 
