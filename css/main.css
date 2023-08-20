@@ -212,6 +212,10 @@ h1 {
   margin: auto;
 }
 
+.flex-direction-column {
+  flex-direction: column;
+}
+
 #hamburger-menu {
   width: 4rem;
   height: 3rem;
