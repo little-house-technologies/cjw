@@ -1,0 +1,14 @@
+.testimonial_image {
+  width: 110px;
+  margin-top: 1.5em;
+}
+
+.testimonial_image-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.testimonial_image-left {
+  float: left;
+  margin-right: 20px;
+}
