@@ -137,6 +137,10 @@ h1 {
   padding: 10px;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .content > div:nth-child(even) {
   background-color: rgba(30, 50, 131, .05);
 }
