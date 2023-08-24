@@ -60,16 +60,12 @@ li {
 }
 
 header, footer {
-  /* background-color: #99ce6b; */
   background: linear-gradient(90deg, var(--dark-green), var(--yellow-green));
   width: 100%;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  border-bottom: 1px solid var(--blue);
-  /* display: flex;
-  flex-direction: column; */
 }
 
 a {

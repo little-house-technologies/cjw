@@ -1,14 +1,52 @@
+.testimonial_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .testimonial_container > div:nth-child(2) {
+  background-color: rgba(0, 0, 0, .1);
+
+} */
+
+.testimonial_image_container {
+  margin: auto;
+  /* 1em is the same as the default margin-block-start value
+  for <p> tags, causing the image to align vertically with its
+  corresponding text. */
+  margin-top: 1em;
+}
+
 .testimonial_image {
-  width: 110px;
-  margin-top: 1.5em;
+  width: 175px;
 }
 
-.testimonial_image-right {
-  float: right;
-  margin-left: 20px;
-}
+/* TRANSITION FROM MOBILE TO DESKTOP */
 
-.testimonial_image-left {
-  float: left;
-  margin-right: 20px;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .testimonial_container {
+    flex-wrap: nowrap;
+  }
+
+  .testimonial_container > div:nth-child(2) {
+    position: relative;
+    height: max-content;
+    z-index: -1;
+  }
+  
+  .testimonial_container > div:nth-child(2)::before {
+    background-color: rgba(0, 0, 0, .05);
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 31px;
+    left: 6px;
+    width: 100%;
+    height: calc(100% - 40px);
+    z-index: -1;
+  }
+
+  .testimonial_image_container {
+    margin-right: 50px;
+  } 
 }
