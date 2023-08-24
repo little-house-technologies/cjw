@@ -25,38 +25,3 @@
   align-items: center;
   justify-content: center;
 }
-
-/* 
-Media queries derived from this website
-https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-should-you-use/#tdlr-use-the-below-css
-*/
-/* X-Small devices (portrait phones, less than 576px) */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
-/* TRANSITION FROM MOBILE TO DESKTOP */
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .section, .text-and-image {
-    flex-direction: row;
-  }
-
-  .text-and-image > div:first-child {
-    margin-right: 50px;
-  }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}
