@@ -1,5 +1,24 @@
 #cindy {
   width: 200px;
+  margin-top: 30px;
+}
+
+#equation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+#ramsey-solutions {
+  width: 200px;
+}
+
+#financial-coach-academy {
+  width: 100px;
+}
+
+.equation-text {
+  white-space: preserve;
 }
 
 .image {
@@ -24,4 +43,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #equation {
+    flex-direction: row;
+  }
 }
