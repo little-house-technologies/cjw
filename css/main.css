@@ -149,6 +149,10 @@ h1 {
   text-align: right;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 /* .content > div:nth-child(even) {
   background-color: rgba(30, 50, 131, .05);
 } */
