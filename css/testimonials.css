@@ -16,7 +16,7 @@
   margin-top: 1em;
 }
 
-.testimonial_image {
+.testimonial_image, .no-image-spacer {
   width: 175px;
 }
 
