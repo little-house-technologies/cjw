@@ -21,6 +21,12 @@ header {
   top: 0;
 }
 
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 3rem;
+}
+
 img {
   /* This eliminates the small gap under the images */
   display: block;
@@ -36,7 +42,7 @@ footer {
 }
 
 footer > span {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 li {
@@ -72,8 +78,7 @@ a {
 }
 
 h1 {
-  margin: 0;
-  margin-left: 10px;
+  margin: 20px;
 }
 
 /* button {
@@ -93,6 +98,13 @@ h1 {
 #logo, #header-spacer {
   width: 4rem;
   height: 4rem;
+}
+
+#logo-text {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 #navbar-q-and-a-call {
@@ -141,9 +153,9 @@ h1 {
   text-align: right;
 }
 
-.content > div:nth-child(even) {
+/* .content > div:nth-child(even) {
   background-color: rgba(30, 50, 131, .05);
-}
+} */
 
 #lightbulb {
   width: 100%;
@@ -415,7 +427,7 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   }
   
   #x-mark:after {
-    right: 8px;
+    right: 10px;
     top: 24px;
   }
 }
@@ -429,7 +441,7 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   }
 
   p, a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   #header-mobile {
