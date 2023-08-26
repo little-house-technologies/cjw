@@ -25,7 +25,7 @@
   width: 300px;
 }
 
-.text-and-image {
+.about_text-and-image {
   display: flex;
   flex-direction: column;
 }
