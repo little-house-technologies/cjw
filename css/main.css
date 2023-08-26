@@ -39,6 +39,7 @@ p, a {
 footer {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid var(--blue);
 }
 
 footer > span {
@@ -57,6 +58,7 @@ li {
 
 #header-computer {
   display: none;
+  border-bottom: 1px solid var(--blue);
 }
 
 header, footer {
