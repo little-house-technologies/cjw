@@ -143,6 +143,10 @@ h1 {
   text-decoration: underline;
 }
 
+.italic {
+  font-style: italic;
+}
+
 #lightbulb {
   width: 100%;
 }
