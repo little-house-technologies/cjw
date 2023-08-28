@@ -34,10 +34,6 @@ const getCurrentPage = () => {
 }
 
 const highlightCurrentRoute = () => {
-  // const urlElements = window.location.href.split('/');
-  // const pageWithFileEnding = urlElements[urlElements.length - 1];
-  // const page = pageWithFileEnding.split('.')[0];
-
   const page = getCurrentPage();
   const pageId = `${page}-link`;
 

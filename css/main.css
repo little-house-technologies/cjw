@@ -260,6 +260,17 @@ h1 {
 }
 
 #need-help {
+  display: none;
+}
+
+#need-help-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#need-help, #need-help-mobile {
   height: 100vh;
 }
 
@@ -428,6 +439,14 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
 
   #lightbulb-container {
     display: block;
+  }
+
+  #need-help {
+    display: flex;
+  }
+
+  #need-help-mobile {
+    display: none;
   }
 
   .font-secondary {
