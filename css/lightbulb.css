@@ -1,7 +1,7 @@
 :root {
-  --top-text-animation-delay: .5s;
-  --lightbulb-animation-delay: 3s;
-  --bottom-text-animation-delay: 4.5s;
+  --top-text-animation-delay: .25s;
+  --lightbulb-animation-delay: 2s;
+  --bottom-text-animation-delay: 3.5s;
 }
 
 .lightbulb-animation_container{
