@@ -1,3 +1,5 @@
+/* TODO: Rename animations to be appropriate. */
+
 :root {
   --top-text-animation-delay: .25s;
   --lightbulb-animation-delay: 2s;
@@ -17,7 +19,6 @@
 }
 
 .lightbulb-animation_container.lightbulb-animation_on{
-  /* background: radial-gradient(#555,#111); */
   animation-name: black-gradient;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -26,13 +27,11 @@
 
 @keyframes black-gradient {
   from {
-    /* background: #222; */
     background: radial-gradient(#222, #222);
   }
 
   to {
     background: radial-gradient(#555,#111);
-
   }
 }
 
@@ -46,15 +45,6 @@
 }
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb{
-  /* background: #fff;
-  box-shadow: 0 0 50px #fff,
-  0 0 100px #fff,
-  0 0 150px #fff,
-  0 0 200px #fff,
-  0 0 250px #fff,
-  0 0 300px #fff,
-  0 0 350px #fff; */
-
   animation-name: light-gradient;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -91,8 +81,6 @@
 }
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb::before{
-  /* background: #fff; */
-
   animation-name: other-light-gradient;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -109,7 +97,6 @@
   }
 }
 
-
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb::after{
   content: '';
   position: absolute;
@@ -118,7 +105,6 @@
   transform: translate(-50%,-50%);
   width: 120px;
   height: 120px;
-  /* background: #fff; */
   border-radius: 50%;
   filter: blur(40px);
 
@@ -138,7 +124,6 @@
   }
 }
 
-
 .lightbulb-animation_bulb span:nth-child(1){
   position: absolute;
   top: -16px;
@@ -153,7 +138,6 @@
 }
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb span:nth-child(1){
-  /* box-shadow: 20px 20px 0 10px #fff; */
   animation-name: box-shadow;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -163,12 +147,10 @@
 @keyframes box-shadow {
   from {
     box-shadow: 20px 20px 0 10px #444;
-
   }
 
   to {
     box-shadow: 20px 20px 0 10px #fff;
-
   }
 }
 
@@ -186,8 +168,6 @@
 }
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb span:nth-child(2){
-  /* box-shadow: -20px 20px 0 10px #fff; */
-
   animation-name: other-box-shadow;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -197,12 +177,10 @@
 @keyframes other-box-shadow {
   from {
     box-shadow: -20px 20px 0 10px #444;
-
   }
 
   to {
     box-shadow: -20px 20px 0 10px #fff;
-
   }
 }
 
@@ -219,13 +197,10 @@
 
 #lightbulb-animation_text-top {
   top: 100px;
-  margin-left: -8.5rem;
+  left: calc(50vw - 6rem)
 }
 
 #lightbulb-animation_text-top.active {
-  /* visibility: visible;
-  opacity: 1; */
-
   animation-name: turn-on;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -234,7 +209,7 @@
 
 #lightbulb-animation_text-bottom {
   bottom: 100px;
-  margin-left: -11rem;
+  left: calc(50vw - 8.5rem);
 }
 
 #lightbulb-animation_text-bottom.active {
@@ -250,7 +225,6 @@
   visibility: hidden;
 }
 
-
 @keyframes turn-on {
   from {
     visibility: none;
@@ -262,4 +236,3 @@
     opacity: 1;
   }
 }
-

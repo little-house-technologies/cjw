@@ -270,6 +270,12 @@ h1 {
   align-items: center;
 }
 
+#need-help-mobile > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: -150px;
+}
+
 #need-help, #need-help-mobile {
   height: 100vh;
 }
