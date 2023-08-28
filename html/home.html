@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <script src="../javascript/controller.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CJW Financial Coaching</title>
   </head>
 
   <body>
@@ -79,6 +80,8 @@
       </div>
     </header>
     
+
+    <link rel="stylesheet" href="../css/lightbulb.css">
     
     <div class="content">
       <div id="lightbulb-container">
@@ -89,20 +92,35 @@
           </h1>
         </div>
       </div>
-      <div class="text-and-image">
+      <div id="need-help" class="text-and-image">
         <div class="flex-direction-column">
           <h2>Do you need help with your money?</h2>
           <h2>Are you in a fog about your finances?</h2>
           <h2>Is it time to stop worrying about <br> your money and the future?</h2>
         </div>
         <div>
-          <img src="../resources/need_help.jpg" alt="Need help?">
+          <img src="../resources/need_help_tall.jpg" alt="Need help?">
         </div>
       </div>
-      <div class="padding">
+
+      <!-- Credit goes to zhttps://codepen.io/bright-sun/pen/GRvGaae for this awesome animation! -->
+      <div class="lightbulb-animation_container">
+        <div id="lightbulb-animation_light" class="lightbulb-animation_light">
+          <div class="lightbulb-animation_bulb">
+              <span></span>
+              <span></span>
+          </div>
+        </div>
+        <div>
+          <h2 id="lightbulb-animation_text-top" class="lightbulb-animation_text">I can shine a light</h2>
+          <h2 id="lightbulb-animation_text-bottom" class="lightbulb-animation_text">and show you the way to</h2>
+        </div>
+        <div id="lightbulb-animation_trigger"></div>
       </div>
+
       <div class="padding">
-        <p class="center-content underline">I can shine a light <br class="break-for-small-devices">and show you the way to:</p>
+
+        <!-- <p class="center-content underline">I can shine a light <br class="break-for-small-devices">and show you the way to:</p> -->
         <div>
           <div class="text-and-image_left">
             <div>

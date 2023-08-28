@@ -259,6 +259,10 @@ h1 {
   right: 4px;
 }
 
+#need-help {
+  height: 100vh;
+}
+
 .circle {
   display: flex;
   justify-content: center;

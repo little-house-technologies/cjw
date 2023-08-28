@@ -1,0 +1,265 @@
+:root {
+  --top-text-animation-delay: .5s;
+  --lightbulb-animation-delay: 3s;
+  --bottom-text-animation-delay: 4.5s;
+}
+
+.lightbulb-animation_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background: #222;
+  z-index: -1;
+}
+
+.lightbulb-animation_container.lightbulb-animation_on{
+  /* background: radial-gradient(#555,#111); */
+  animation-name: black-gradient;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--lightbulb-animation-delay);
+}
+
+@keyframes black-gradient {
+  from {
+    /* background: #222; */
+    background: radial-gradient(#222, #222);
+  }
+
+  to {
+    background: radial-gradient(#555,#111);
+
+  }
+}
+
+.lightbulb-animation_bulb{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #444;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb{
+  /* background: #fff;
+  box-shadow: 0 0 50px #fff,
+  0 0 100px #fff,
+  0 0 150px #fff,
+  0 0 200px #fff,
+  0 0 250px #fff,
+  0 0 300px #fff,
+  0 0 350px #fff; */
+
+  animation-name: light-gradient;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--lightbulb-animation-delay);
+}
+
+@keyframes light-gradient {
+  from {
+    background: #444;
+  }
+
+  to {
+    background: #fff;
+    box-shadow: 0 0 50px #fff,
+    0 0 100px #fff,
+    0 0 150px #fff,
+    0 0 200px #fff,
+    0 0 250px #fff,
+    0 0 300px #fff,
+    0 0 350px #fff;
+  }
+}
+
+.lightbulb-animation_bulb::before{
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 22.5px;
+  width: 35px;
+  height: 80px;
+  background: #444;
+  border-top:30px solid #000 ;
+  border-radius: 10px;
+}
+
+.lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb::before{
+  /* background: #fff; */
+
+  animation-name: other-light-gradient;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--lightbulb-animation-delay);
+}
+
+@keyframes other-light-gradient {
+  from {
+    background: #444;
+  }
+
+  to {
+    background: #fff;
+  }
+}
+
+
+.lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 120px;
+  height: 120px;
+  /* background: #fff; */
+  border-radius: 50%;
+  filter: blur(40px);
+
+  animation-name: other-other-light-gradient;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--lightbulb-animation-delay);
+}
+
+@keyframes other-other-light-gradient {
+  from {
+    background: #444;
+  }
+
+  to {
+    background: #fff;
+  }
+}
+
+
+.lightbulb-animation_bulb span:nth-child(1){
+  position: absolute;
+  top: -16px;
+  left: -4px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  transform: rotate(342deg);
+  border-bottom-right-radius: 40px;
+  box-shadow: 20px 20px 0 10px #444;
+}
+
+.lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb span:nth-child(1){
+  /* box-shadow: 20px 20px 0 10px #fff; */
+  animation-name: box-shadow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--lightbulb-animation-delay);
+}
+
+@keyframes box-shadow {
+  from {
+    box-shadow: 20px 20px 0 10px #444;
+
+  }
+
+  to {
+    box-shadow: 20px 20px 0 10px #fff;
+
+  }
+}
+
+.lightbulb-animation_bulb span:nth-child(2){
+  position: absolute;
+  top: -16px;
+  right: -4px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  transform: rotate(17deg);
+  border-bottom-left-radius: 40px;
+  box-shadow: -20px 20px 0 10px #444;
+}
+
+.lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb span:nth-child(2){
+  /* box-shadow: -20px 20px 0 10px #fff; */
+
+  animation-name: other-box-shadow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--lightbulb-animation-delay);
+}
+
+@keyframes other-box-shadow {
+  from {
+    box-shadow: -20px 20px 0 10px #444;
+
+  }
+
+  to {
+    box-shadow: -20px 20px 0 10px #fff;
+
+  }
+}
+
+.lightbulb-animation_on {
+  top: 15%;
+}
+
+.lightbulb-animation_text {
+  position: absolute;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#lightbulb-animation_text-top {
+  top: 100px;
+  margin-left: -8.5rem;
+}
+
+#lightbulb-animation_text-top.active {
+  /* visibility: visible;
+  opacity: 1; */
+
+  animation-name: turn-on;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--top-text-animation-delay);
+}
+
+#lightbulb-animation_text-bottom {
+  bottom: 100px;
+  margin-left: -11rem;
+}
+
+#lightbulb-animation_text-bottom.active {
+  animation-name: turn-on;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--bottom-text-animation-delay);
+}
+
+#lightbulb-animation_trigger {
+  position: absolute;
+  bottom: 65px;
+  visibility: hidden;
+}
+
+
+@keyframes turn-on {
+  from {
+    visibility: none;
+    opacity: 0;
+  }
+
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
