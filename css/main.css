@@ -27,6 +27,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 img {
   /* This eliminates the small gap under the images */
   display: block;

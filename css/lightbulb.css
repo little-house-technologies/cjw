@@ -197,7 +197,7 @@
 
 #lightbulb-animation_text-top {
   top: 100px;
-  left: calc(50vw - 6rem)
+  left: calc(50vw - 7.5rem)
 }
 
 #lightbulb-animation_text-top.active {
@@ -209,7 +209,7 @@
 
 #lightbulb-animation_text-bottom {
   bottom: 100px;
-  left: calc(50vw - 8.5rem);
+  left: calc(50vw - 11rem);
 }
 
 #lightbulb-animation_text-bottom.active {
