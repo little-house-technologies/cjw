@@ -178,6 +178,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  text-align: center;
 }
 
 .text-and-image {
@@ -272,6 +273,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #need-help-mobile > div {
@@ -465,6 +467,7 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
 
   .text-and-image, .text-and-image_left {
     flex-direction: row;
+    text-align: left;
   }
 
   .text-and-image img, .text-and-image_left img {
