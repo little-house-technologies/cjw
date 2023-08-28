@@ -2,8 +2,9 @@
 
 :root {
   --top-text-animation-delay: .25s;
-  --lightbulb-animation-delay: 2s;
-  --bottom-text-animation-delay: 3.5s;
+  --lightbulb-animation-delay: .5s;
+  --lightbulb-animation-duration: 2s;
+  --bottom-text-animation-delay: 2s;
 }
 
 .lightbulb-animation_container{
@@ -20,7 +21,7 @@
 
 .lightbulb-animation_container.lightbulb-animation_on{
   animation-name: black-gradient;
-  animation-duration: 1s;
+  animation-duration: var(--lightbulb-animation-duration);
   animation-fill-mode: forwards;
   animation-delay: var(--lightbulb-animation-delay);
 }
@@ -46,7 +47,7 @@
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb{
   animation-name: light-gradient;
-  animation-duration: 1s;
+  animation-duration: var(--lightbulb-animation-duration);
   animation-fill-mode: forwards;
   animation-delay: var(--lightbulb-animation-delay);
 }
@@ -82,7 +83,7 @@
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb::before{
   animation-name: other-light-gradient;
-  animation-duration: 1s;
+  animation-duration: var(--lightbulb-animation-duration);
   animation-fill-mode: forwards;
   animation-delay: var(--lightbulb-animation-delay);
 }
@@ -109,7 +110,7 @@
   filter: blur(40px);
 
   animation-name: other-other-light-gradient;
-  animation-duration: 1s;
+  animation-duration: var(--lightbulb-animation-duration);
   animation-fill-mode: forwards;
   animation-delay: var(--lightbulb-animation-delay);
 }
@@ -139,7 +140,7 @@
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb span:nth-child(1){
   animation-name: box-shadow;
-  animation-duration: 1s;
+  animation-duration: var(--lightbulb-animation-duration);
   animation-fill-mode: forwards;
   animation-delay: var(--lightbulb-animation-delay);
 }
@@ -169,7 +170,7 @@
 
 .lightbulb-animation_container.lightbulb-animation_on .lightbulb-animation_bulb span:nth-child(2){
   animation-name: other-box-shadow;
-  animation-duration: 1s;
+  animation-duration: var(--lightbulb-animation-duration);
   animation-fill-mode: forwards;
   animation-delay: var(--lightbulb-animation-delay);
 }
