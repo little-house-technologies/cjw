@@ -359,6 +359,8 @@ h1 {
 /* slideshow stuff */
 .slideshow-container {
   margin-top: 60px;
+  position: relative;
+  z-index: -1;
 }
 
 /* Slideshow container */
