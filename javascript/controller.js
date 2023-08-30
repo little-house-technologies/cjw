@@ -74,8 +74,6 @@ const waitForLightbulbAnimationTrigger = () => {
 
 };
 
-
-
 let slideIndex = 1;
 // showSlides(slideIndex);
 
@@ -104,18 +102,6 @@ const showSlides = (n) => {
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " dot-active";
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 window.onload = () => {
   setupEventListeners();

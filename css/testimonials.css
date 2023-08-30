@@ -1,10 +1,7 @@
-#danny {
-  scroll-margin-top: 75px;
-}
-
 .testimonial_container {
   display: flex;
   flex-wrap: wrap;
+  scroll-margin-top: 75px;
 }
 
 .testimonial_image_container {

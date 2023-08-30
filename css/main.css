@@ -352,12 +352,7 @@ h1 {
 
 
 
-
-
-
-
-
-
+/* slideshow stuff */
 .slideshow-container {
   margin-top: 60px;
 }
@@ -378,12 +373,19 @@ h1 {
   margin: auto;
 }
 
+.mySlides a {
+  display: flex;
+  width: 100%;
+  cursor: default;
+}
+
 .mySlides img {
   height: 250px;
 }
 
 .mySlides h3 {
   margin-top: 0;
+  cursor: pointer;
 }
 
 /* Next & previous buttons */
@@ -423,7 +425,7 @@ h1 {
   font-size: 1.4rem;
   padding: 8px 12px;
   margin-left: 10px;
-  background-color: rgba(50, 70, 131, .25);
+  background-color: rgba(50, 70, 131, .1);
   width: 100%;
 }
 
@@ -453,39 +455,6 @@ h1 {
   from {opacity: .4}
   to {opacity: 1}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* 
