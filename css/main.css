@@ -98,9 +98,13 @@ h1 {
 #logo-text {
   display: inline-block;
   margin-left: 10px;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
 }
+
+/* #home-link {
+  font-size: 2em;
+} */
 
 #navbar-q-and-a-call {
   display: none;
@@ -368,7 +372,6 @@ h1 {
 /* Hide the images by default */
 .mySlides {
   display: none;
-  /* background-color: rgba(50, 70, 131); */
   width: 90%;
   margin: auto;
 }
