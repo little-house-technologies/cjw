@@ -1,10 +1,10 @@
 /* TODO: Rename animations to be appropriate. */
 
 :root {
-  --top-text-animation-delay: .25s;
-  --lightbulb-animation-delay: .5s;
-  --lightbulb-animation-duration: 2s;
-  --bottom-text-animation-delay: 2s;
+  --top-text-animation-delay: 0s;
+  --lightbulb-animation-delay: 0s;
+  --lightbulb-animation-duration: 0s;
+  --bottom-text-animation-delay: 0s;
 }
 
 .lightbulb-animation_container{
@@ -203,7 +203,7 @@
 
 #lightbulb-animation_text-top.active {
   animation-name: turn-on;
-  animation-duration: 2s;
+  animation-duration: 0s;
   animation-fill-mode: forwards;
   animation-delay: var(--top-text-animation-delay);
 }
@@ -215,7 +215,7 @@
 
 #lightbulb-animation_text-bottom.active {
   animation-name: turn-on;
-  animation-duration: 1s;
+  animation-duration: 0s;
   animation-fill-mode: forwards;
   animation-delay: var(--bottom-text-animation-delay);
 }

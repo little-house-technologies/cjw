@@ -77,5 +77,5 @@ const waitForLightbulbAnimationTrigger = () => {
 window.onload = () => {
   setupEventListeners();
   highlightCurrentRoute();
-  waitForLightbulbAnimationTrigger();
+  // waitForLightbulbAnimationTrigger();
 };
