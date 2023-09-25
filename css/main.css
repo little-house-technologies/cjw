@@ -337,6 +337,12 @@ h1 {
   border-radius: 4px;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(112%);
+  -webkit-filter: brightness(112%);
 }
 
 .font-small {
