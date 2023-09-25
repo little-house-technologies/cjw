@@ -111,7 +111,7 @@ h1 {
   display: none;
 }
 
-.logo-container {
+.logo-container, .display-flex {
   display: flex;
 }
 

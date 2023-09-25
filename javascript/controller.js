@@ -41,7 +41,7 @@ const highlightCurrentRoute = () => {
 };
 
 const waitForLightbulbAnimationTrigger = () => {
-  if (getCurrentPage() === 'home') {
+  if (getCurrentPage() === 'Home') {
     // We are creating a new IntersectionObserver instance
     let observer = new IntersectionObserver((entries, observer) => {
       // This takes a callback function that receives two arguments: the elements list and the observer instance.
@@ -75,7 +75,6 @@ const waitForLightbulbAnimationTrigger = () => {
 };
 
 let slideIndex = 1;
-// showSlides(slideIndex);
 
 // Next/previous controls
 const plusSlides = (n) => {
@@ -88,7 +87,7 @@ const currentSlide = (n) => {
 }
 
 const showSlides = (n) => {
-  if (getCurrentPage() === 'home') {
+  if (getCurrentPage() === 'Home') {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
