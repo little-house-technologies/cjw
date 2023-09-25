@@ -29,6 +29,12 @@ const setupEventListeners = () => {
 
 const getCurrentPage = () => {
   const urlElements = window.location.href.split('/');
+
+  if (urlElements[urlElements.length - 1] === '') {
+    // Home page
+    return 'Home';
+  }
+
   const pageWithFileEnding = urlElements[urlElements.length - 1];
   return pageWithFileEnding.split('.')[0];
 }
