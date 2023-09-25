@@ -144,6 +144,11 @@ h1 {
   padding: 10px;
 }
 
+.ample-vertical-space {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
 .text-align-right {
   text-align: right;
 }
@@ -179,6 +184,10 @@ h1 {
   color: var(--white);
 }
 
+#lets-talk {
+  font-size: 3rem;
+}
+
 .text-and-image, .text-and-image_left {
   display: flex;
   justify-content: space-between;
@@ -207,6 +216,10 @@ h1 {
 
 .center-content {
   margin: auto;
+  text-align: center;
+}
+
+.center-text-mobile {
   text-align: center;
 }
 
@@ -592,6 +605,18 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   .text-block {
     margin: auto;
     width: 70%;
+  }
+
+  /* Need a copy of this class here because the above .text-block
+  class will override all margin with "auto" otherwise. */
+  .ample-vertical-space {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  /* We only want content centered  */
+  .center-text-mobile {
+    text-align: left;
   }
 }
 
