@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cjwfinco.com/sitemap.txt
+Sitemap: https://cjwfinco.com/sitemap.txt

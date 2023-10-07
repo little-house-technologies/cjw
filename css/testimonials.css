@@ -24,6 +24,11 @@
     flex-wrap: nowrap;
   }
 
+  /* To do: get rid of the div:nth-child(2)::before stuff. Originally I did it with
+  the pseudo-selector because I wanted the grey background to be offset from the text.
+  But people thought it was like that on accident, so I just centered it. Since it's
+  centered, it's not really necessary to structure the code with pseudo-selector,
+  and would be more simple to do in another way.*/
   .testimonial_container > div:nth-child(2) {
     position: relative;
     height: max-content;
@@ -35,10 +40,10 @@
     content: "";
     margin: 0 auto;
     position: absolute;
-    top: 31px;
-    left: 6px;
-    width: 100%;
-    height: calc(100% - 40px);
+    top: 17px;
+    left: -11px;
+    width: 104%;
+    height: calc(100% - 33px);
     z-index: -1;
   }
 
