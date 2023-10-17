@@ -292,15 +292,23 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  margin-bottom: 75px;
 }
 
 #need-help-mobile > div {
   display: flex;
   flex-direction: column;
-  margin-top: -150px;
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
 }
 
-#need-help, #need-help-mobile {
+#need-help-mobile > img {
+  width: 100%;
+}
+
+#need-help {
   height: 100vh;
 }
 
@@ -520,6 +528,11 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   .logo-container-mobile {
     margin-left: 80px;
   }
+
+  #need-help-mobile > div {
+    top: 6vw;
+    left: 13vw;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -545,6 +558,11 @@ https://weekendprojects.dev/posts/which-responsive-media-query-breakpoints-shoul
   #x-mark:after {
     right: 10px;
     top: 24px;
+  }
+
+  #need-help-mobile > div {
+    top: 10vw;
+    left: 15vw;
   }
 }
 
